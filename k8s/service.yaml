@@ -3,14 +3,14 @@ kind: Service
 metadata:
   creationTimestamp: null
   labels:
-    app: ctse_backend_02
-  name: ctse_backend_02
+    app: ctsebackend02
+  name: ctsebackend02
 spec:
   ports:
     - port: 5001
       protocol: TCP
       targetPort: 5001
   selector:
-    app: ctse_backend_02
+    app: ctsebackend02
 status:
   loadBalancer: {}

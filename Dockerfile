@@ -1,11 +1,11 @@
 FROM node:18-alpine3.14
 
-WORKDIR /app
+WORKDIR /usr/src/app
+
+COPY package*.json ./
 
 COPY . .
 
-RUN npm i
-
-EXPOSE 5001
+RUN yarn install
 
 CMD [ "node", "server.js" ]

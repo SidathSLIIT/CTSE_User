@@ -4,9 +4,9 @@ WORKDIR /usr/src/app
 
 COPY package*.json ./
 
-COPY . .
-
 RUN yarn install
+
+COPY . .
 
 EXPOSE 5001
 
